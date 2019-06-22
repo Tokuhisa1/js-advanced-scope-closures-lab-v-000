@@ -6,8 +6,14 @@
 // "within range by 7" and foo('12th', '30th') would return "8
 // blocks out of range". We recommend referencing the
 // test/indexTest.js for more details.
-function produceDrivingRange() {
-
+function produceDrivingRange(num) {
+  var range = num;
+  return function(street1, street2) {
+    var distance = abs(parseInt(street1) - parseInt(street2));
+    if (distance < range) {
+      return 'within range by ' + range - distance;
+    }
+  }
 }
 // produceTipCalculator() - Returns a function that then
 // calculates a tip. For example, produceTipCalculator(.10)
