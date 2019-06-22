@@ -33,7 +33,7 @@ function produceTipCalculator(percent) {
 // have access to "driverId".
 function createDriver() {
   let driverId = 0;
-  
+
   return function() {
     return class Driver {
       constructor() {
