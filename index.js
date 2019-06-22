@@ -8,7 +8,7 @@
 // test/indexTest.js for more details.
 function produceDrivingRange(blockRange) {
   return function(street1, street2) {
-    var distance = abs(parseInt(street1) - parseInt(street2));
+    var distance = Math.abs(parseInt(street1) - parseInt(street2));
     if (distance < blockRange) {
       return 'within range by ' + blockRange - distance;
     }
