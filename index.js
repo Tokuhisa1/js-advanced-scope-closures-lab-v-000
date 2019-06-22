@@ -7,9 +7,15 @@
 // blocks out of range". We recommend referencing the
 // test/indexTest.js for more details.
 function produceDrivingRange() {
+
+}
+// produceTipCalculator() - Returns a function that then calculates
+// a tip. For example, produceTipCalculator(.10) returns a function
+// that calculates ten percent tip on a fare.
+// produceTipCalculator(.20) returns a function that calculates
+// twenty percent tip on a fare.
+function produceTipCalculator() {
   
 }
-// produceTipCalculator() - Returns a function that then calculates a tip. For example, produceTipCalculator(.10) returns a function that calculates ten percent tip on a fare. produceTipCalculator(.20) returns a function that calculates twenty percent tip on a fare.
-//
 // createDriver is a function that returns a Driver class. The class has reference to a driverId that is incremented each time a new driver is created. The rest of the code base does not have access to driverId.
 //
