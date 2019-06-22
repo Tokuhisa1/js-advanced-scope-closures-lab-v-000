@@ -27,10 +27,18 @@ function produceTipCalculator(percent) {
     return fare * percent;
   };
 }
-// createDriver is a function that returns a Driver class. The
+// "createDriver" is a function that returns a Driver class. The
 // class has reference to a driverId that is incremented each time
 // a new driver is created. The rest of the code base does not
 // have access to "driverId".
 function createDriver() {
-
+  let driverId = 0;
+  
+  return function() {
+    return class Driver {
+      constructor() {
+        this.id = ++driverId;
+      }
+    }
+  }
 }
