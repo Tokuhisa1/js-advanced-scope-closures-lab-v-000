@@ -1,4 +1,4 @@
-// produceDrivingRange() - Calculates whether a given trip is
+// "produceDrivingRange()" - Calculates whether a given trip is
 // within range. For example, "produceDrivingRange(10)" returns a
 // function that will take two strings as arguments and returns a
 // message stating whether the trip is in range. If foo =
@@ -17,7 +17,7 @@ function produceDrivingRange(blockRange) {
     }
   };
 }
-// produceTipCalculator() - Returns a function that then
+// "produceTipCalculator()" - Returns a function that then
 // calculates a tip. For example, produceTipCalculator(.10)
 // returns a function that calculates ten percent tip on a fare.
 // produceTipCalculator(.20) returns a function that calculates
