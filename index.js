@@ -15,7 +15,7 @@ function produceDrivingRange(blockRange) {
     } else if (distance > blockRange) {
       return distance - blockRange + ' blocks out of range';
     }
-  }
+  };
 }
 // produceTipCalculator() - Returns a function that then
 // calculates a tip. For example, produceTipCalculator(.10)
@@ -23,7 +23,7 @@ function produceDrivingRange(blockRange) {
 // produceTipCalculator(.20) returns a function that calculates
 // twenty percent tip on a fare.
 function produceTipCalculator() {
-
+  return function() {};
 }
 // createDriver is a function that returns a Driver class. The
 // class has reference to a driverId that is incremented each time
