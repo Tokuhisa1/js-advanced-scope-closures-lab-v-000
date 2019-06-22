@@ -22,8 +22,10 @@ function produceDrivingRange(blockRange) {
 // returns a function that calculates ten percent tip on a fare.
 // produceTipCalculator(.20) returns a function that calculates
 // twenty percent tip on a fare.
-function produceTipCalculator() {
-  return function() {};
+function produceTipCalculator(percent) {
+  return function(fare) {
+    return fare * percent;
+  };
 }
 // createDriver is a function that returns a Driver class. The
 // class has reference to a driverId that is incremented each time
