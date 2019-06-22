@@ -11,6 +11,8 @@ function produceDrivingRange(blockRange) {
     var distance = Math.abs(parseInt(street1) - parseInt(street2));
     if (distance < blockRange) {
       return 'within range by ' + blockRange - distance;
+    } else if (distance > blockRange) {
+      return distance - blockRange + ' blocks out of range';
     }
   }
 }
